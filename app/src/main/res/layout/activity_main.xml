@@ -14,7 +14,20 @@
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/activity_padding"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+    app:layout_constraintTop_toTopOf="parent"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    />
+
+  <FrameLayout
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraint
+    tools:context=".MainActivity">
+
+
+  </FrameLayout>
 
   <android.support.design.widget.BottomNavigationView
     android:id="@+id/navigation"
@@ -26,6 +39,7 @@
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
-    app:menu="@menu/navigation"/>
+    app:menu="@menu/navigation"
+    />
 
 </android.support.constraint.ConstraintLayout>
